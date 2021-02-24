@@ -16,17 +16,48 @@
 <body>
 <div id="app">
 	<header>
-		<nav>
-			<div class="container">
-			</div>
-		</nav>
+		<div class="container">
+			<a class="logo" href="#"></a>
+			<nav class="menu">
+				<a href="#" class="active">Main One</a>
+				<a href="#">Page Two</a>
+				<a href="#">Page Three</a>
+				<a href="#">About Us</a>
+				<a href="#">Our Work</a>
+				<a href="#">Contact</a>
+				<span>
+					<a href="#" class="lang-switch first">EN</a>
+					<a href="#" class="lang-switch selected">GR</a>
+				</span>
+				<a href="javascript:void(0);" class="icon">
+					<i></i>
+					<i></i>
+					<i></i>
+				</a>
+			</nav>
+		</div>
 	</header>
 	<section class="slider-wrapper">
-		<div class="intro-text">
-			<h1>S.und Co</h1>
-			<p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
+		<div class="container">
+			<div class="intro-text">
+				<h1>S.und Co</h1>
+				<p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
+			</div>
 		</div>
-		<div class="slider-img" style="background-image:url(images/bg.png);"></div>
+		<div class="slider-img fade">
+			<div style="background-image:url(images/bg.jpg);"></div>
+		</div>
+		<div class="slider-img fade">
+			<div style="background-image:url(images/bg2.jpg);"></div>
+		</div>
+		<div class="slider-img fade">
+			<div style="background-image:url(images/bg3.jpg);"></div>
+		</div>		
+		<div class="slider-dots">
+		  <span class="slider-dot" data-slide="1"></span>
+		  <span class="slider-dot" data-slide="2"></span>
+		  <span class="slider-dot" data-slide="3"></span>
+		</div>		
 	</section>
 	<section class="standard-text">
 		<div class="container clearfix">
@@ -51,7 +82,7 @@
 	</section>
 	<section class="contact-wrapper">
 		<div class="contact-side a">
-			<div class="dot"></div>
+			<div class="map-dot"></div>
 			<img src="images/map.png" />
 		</div>
 		<div class="contact-side b">
@@ -61,19 +92,19 @@
 				<form>
 					<div class="input-box floated">
 						<input type="text" name="full-name" id="name" value="" autocomplete="off">
-						<label for="fname">Full Name *</label>
+						<label for="fname" class="label"><span>Full Name *</span></label>
 						<span class="checkmark"></span>
 						<span class="help-text">This field is required</span>
 					</div>
 					<div class="input-box floated">
 						<input type="text" name="email" id="email" value="" autocomplete="off">
-						<label for="email">E-mail *</label>
+						<label for="email" class="label"><span>E-mail *</span></label>
 						<span class="checkmark"></span>
 						<span class="help-text">This field is required</span>
 					</div>
 					<div class="input-box floated">
 						<input type="text" name="phone" id="phone" value="" autocomplete="off">
-						<label for="phone">Phone *</label>
+						<label for="phone" class="label"><span>Phone *</span></label>
 						<span class="checkmark"></span>
 						<span class="help-text">This field is required</span>
 					</div>
@@ -87,12 +118,12 @@
 					</div>
 					<div class="input-box floated">
 						<textarea name="message" id="message" autocomplete="off"></textarea>
-						<label for="message">Message</label>
+						<label for="message" class="label label2"><span>Message</span></label>
 						<span class="char-count">100</span>
 					</div>
 					<div class="input-box">
 						<p class="checkbox-text">Please select at least one of the following:</p>
-						<input type="checkbox" name="options" value="Option 1" id="option1" /> <label for="option1">Option 1</label> <input type="checkbox" name="options" value="Option 2" id="option2" /> <label for="option2">Option 2</label> 
+						<input type="checkbox" name="options" value="Option 1" id="option1" /> <label for="option1">Option 1</label> <input type="checkbox" name="options" value="Option 2" id="option2" class="option2" /> <label for="option2">Option 2</label> 
 					</div>
 					<div class="input-box">
 						<div class="btn" id="submit">Submit</div>
