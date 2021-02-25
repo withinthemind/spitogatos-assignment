@@ -24,18 +24,18 @@ $(document).ready(function(){
 
 	function showSlides(n) {
 	  var i;
-	  var slides = document.getElementsByClassName("slider-img");
-	  var dots = document.getElementsByClassName("slider-dot");
+	  var slides = document.getElementsByClassName('slider-img');
+	  var dots = document.getElementsByClassName('slider-dot');
 	  if (n > slides.length) {slideIndex = 1}
 	  if (n < 1) {slideIndex = slides.length}
 	  for (i = 0; i < slides.length; i++) {
-		  slides[i].style.display = "none";
+		  slides[i].style.display = 'none';
 	  }
 	  for (i = 0; i < dots.length; i++) {
-		  dots[i].className = dots[i].className.replace(" active", "");
+		  dots[i].className = dots[i].className.replace(' active', '');
 	  }
-	  slides[slideIndex-1].style.display = "block";
-	  dots[slideIndex-1].className += " active";
+	  slides[slideIndex-1].style.display = 'block';
+	  dots[slideIndex-1].className += ' active';
 	}		
 
 	// function to show input error
@@ -149,6 +149,11 @@ $(document).ready(function(){
 		$(this).next('label').removeClass('error');
     });
 	
+	// checkbox click handler
+	$('.input-box .checkbox-wrapper').on('click', function () {
+		$(this).toggleClass('checked');
+	});
+		
 	// form submit
 	$('#submit').click(function() {
 		$('input[type=text]').focus();
